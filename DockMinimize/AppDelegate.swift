@@ -51,7 +51,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             // Use custom MenuBar icon from Assets
             if let menuBarIcon = NSImage(named: "MenuBarIcon") {
                 button.image = menuBarIcon
-                button.image?.isTemplate = true
+                button.image?.isTemplate = false
             } else {
                 // Fallback to SF Symbol
                 button.image = NSImage(systemSymbolName: "rectangle.stack", accessibilityDescription: "DockMinimize")
